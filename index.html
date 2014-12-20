@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Privacy Meter</title>
+
+<script src="js/jquery-2.1.1.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+
+<link rel="stylesheet" href="style/jquery.mobile-1.4.5.min.css">
+<link rel="stylesheet" href="style/pageOne.css">
+</head>
+
+<body>
+<div data-role="page" id="pageOne">
+	<header>
+		Privacy Meter
+	</header>
+	
+	<div data-role="content">
+		<div align="center">
+			<h1>Privacy Meter</h1>
+			<h4>It offers transparency and information to help you to be aware of your privacy.</h4>
+			
+			<a href="#about" data-icon="info" data-iconpos="" data-transition="flip" data-role="button" data-theme="b">About PM</a>
+			<a href="#yourPM" data-icon="info" data-iconpos="" data-transition="flip" data-role="button" data-theme="b">Your PM</a>
+			<a href="#pmSettings" data-icon="info" data-iconpos="" data-transition="flip" data-role="button" data-theme="b">PM Settings</a>
+			<a href="#policy" data-icon="info" data-iconpos="" data-transition="flip" data-role="button" data-theme="b">Privacy Policy</a>				
+		</div>	
+	</div>
+	
+	<div data-position="fixed" data-role="footer">
+		<div align="center">
+			<input data-inline="true" data-icon="arrow-l" data-iconpos="notext" type="button" value="Privacy Matrix" onClick="JavaScript:matrix()"/>
+			<input data-inline="true" data-icon="home" data-iconpos="notext" type="button" value="Privacy Matrix" onClick="JavaScript:matrix()"/>
+			<input data-inline="true" data-icon="arrow-r" data-iconpos="notext" type="button" value="Privacy Matrix" onClick="JavaScript:matrix()"/>
+		</div>	
+	</div>
+</div>
+
+
+
+<div data-role="page" id="about">
+	<header>Settings</header>
+	<h2>What is Privacy Meter?</h2>
+	<h4>This application helps you to understand probable privacy implications prior to use other applications.</h4>
+	<h3>You may learn more on Mozilla website:</h3>
+	<a href="https://support.mozilla.org/en-US/kb/privacy-and-security-settings-firefox-os" data-role="button" data-theme="b">Mozilla Privacy Policy</a>
+			
+	<div data-position="fixed" data-role="footer">
+		<div align="center">
+			<a href="#pageOne" data-transition="flip" data-inline="true" data-icon="arrow-l" data-iconpos="notext" data-role="button" data-icon="gear" data-theme="b">Settings</a>	
+			<a href="#pageOne" data-transition="flip" data-inline="true" data-icon="home" data-iconpos="notext" data-role="button" data-icon="gear" data-theme="b">Settings</a>				
+			<a href="" data-inline="true" data-icon="arrow-r" data-iconpos="notext" data-role="button" data-icon="gear" data-theme="b">Settings</a>				
+		</div>
+	</div>
+</div>
+
+<div data-role="page" id="yourPM">
+	<header>Your PM</header>
+	<h2>Your PM</h2>
+	<div align="left">
+		<div data-role="collapsible">
+		<h3>Location Exposure</h3>
+			Your location could be exposed by using this app which uses Geolocation API.
+			<div data-role="collapsible">
+				<h4>Learn more</h4>
+				Geolocation API is capable to determine your location.
+			</div> 
+		</div>
+		<div data-role="collapsible">
+		<h3>Image Exposure</h3>
+			Your personal images could be exposed by using this app which uses Storage API.
+			<div data-role="collapsible">
+				<h4>Learn more</h4>
+				Storage API is capable of reading files from your saved pictures folder.
+			</div> 
+		</div>
+	</div>
+			
+	<div data-position="fixed" data-role="footer">
+		<div align="center">
+			<a href="#pageOne" data-transition="flip" data-inline="true" data-icon="arrow-l" data-iconpos="notext" data-role="button" data-icon="gear" data-theme="b">Settings</a>	
+			<a href="#pageOne" data-transition="flip" data-inline="true" data-icon="home" data-iconpos="notext" data-role="button" data-icon="gear" data-theme="b">Settings</a>				
+			<a href="" data-inline="true" data-icon="arrow-r" data-iconpos="notext" data-role="button" data-icon="gear" data-theme="b">Settings</a>				
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

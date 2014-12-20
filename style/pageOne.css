@@ -1,0 +1,19 @@
+h1
+{
+	color:black; 
+}
+
+header
+{
+	background-color:lightgrey;
+	width:100#;
+}
+
+footer
+{
+	background-color:lightgrey;
+	width:100#;
+	position:absolute;
+	bottom:0;
+	left:0;
+}
